@@ -1,8 +1,8 @@
 /composer.json
 /apigen.phar
 .idea/php.xml
-
-
+/vendor
+*.lock
 # Created by https://www.gitignore.io/api/jetbrains
 
 ### JetBrains ###

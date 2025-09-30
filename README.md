@@ -1,3 +1,5 @@
+# Fixed warning
+
 # ArangoDB-PHP - A PHP client for ArangoDB
 
 This driver for ArangoDB, called the ArangoDB-PHP client,
@@ -973,3 +975,4 @@ try {
 
 - [PHPDoc documentation](http://arangodb.github.io/arangodb-php/)
   for the complete library
+

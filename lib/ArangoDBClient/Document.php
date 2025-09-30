@@ -786,8 +786,7 @@ class Document implements \JsonSerializable
      *
      * @return array - array of all document attributes/values
      */
-    #[\ReturnTypeWillChange]
-    public function jsonSerialize(array $options = [])
+    public function jsonSerialize(array $options = []): array
     {
         return $this->getAll($options);
     }

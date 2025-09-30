@@ -292,7 +292,7 @@ class ConnectionOptions extends OptionHelper
      *
      * @return void
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value) :void
     {
         $this->values[$offset] = $value;
         if ($offset === self::OPTION_CONNECT_TIMEOUT || $offset === self::OPTION_REQUEST_TIMEOUT) {
@@ -319,7 +319,7 @@ class ConnectionOptions extends OptionHelper
      *
      * @return bool - true if we have more than one endpoint to connect to
      */
-    public function haveMultipleEndpoints() 
+    public function haveMultipleEndpoints(): bool  
     {
         assert(is_array($this->values[self::OPTION_ENDPOINT]));
         return count($this->values[self::OPTION_ENDPOINT]) > 1;
@@ -334,7 +334,7 @@ class ConnectionOptions extends OptionHelper
      *
      * @return void
      */
-    public function addEndpoint($endpoint) 
+    public function addEndpoint($endpoint): void 
     {
         if (!is_string($endpoint) || !Endpoint::isValid($endpoint)) {
             throw new ClientException(sprintf("invalid endpoint specification '%s'", $endpoint));
@@ -367,7 +367,7 @@ class ConnectionOptions extends OptionHelper
      *
      * @return string - the next endpoint
      */
-    public function nextEndpoint() 
+    public function nextEndpoint()
     {
         assert(is_array($this->values[self::OPTION_ENDPOINT]));
         $endpoints = $this->values[self::OPTION_ENDPOINT];
