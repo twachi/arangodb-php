@@ -1,6 +1,7 @@
 {
   "name": "twachikku/arangodb",
   "type": "library",
+  "version" : "3.9",
   "description": "ArangoDB PHP client",
   "keywords": ["database","ArangoDB","Arango","document store","NoSQL","multi-model","graph database","distributed"],
   "homepage": "https://github.com/twachi/arangodb-php",
