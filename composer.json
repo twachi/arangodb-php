@@ -1,9 +1,9 @@
 {
-  "name": "arangodb/arangodb",
+  "name": "twachikku/arangodb",
   "type": "library",
   "description": "ArangoDB PHP client",
   "keywords": ["database","ArangoDB","Arango","document store","NoSQL","multi-model","graph database","distributed"],
-  "homepage": "https://github.com/arangodb/arangodb-php",
+  "homepage": "https://github.com/twachi/arangodb-php",
   "license": "Apache-2.0",
   "authors": [
     {
@@ -32,7 +32,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/arangodb/arangodb-php"
+      "url": "https://github.com/twachi/arangodb-php"
     }
   ]
 }
